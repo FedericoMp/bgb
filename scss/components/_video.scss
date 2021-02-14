@@ -1,0 +1,14 @@
+.video {
+    height: 75vh;
+    &.bg-video {
+        background-image: url('../assets/img/living-min.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        opacity: 0.8;
+    }
+    &__icon {
+        width: 88px;
+        height: 88px;
+    }
+}

@@ -1,0 +1,9 @@
+@import '../utils/colors';
+
+.navbar {
+    background-color: $dk-grey-3;
+    &__logo--white {
+        width: 90px;
+        height: 49px;
+    }
+}
