@@ -1,9 +1,7 @@
-@import '../utils/colors';
-
 .footer {
     background-color: $white;
     &__container {
-        padding: 1em 0;
+        padding: 1em;
         &__logo--black {
             width: 110px;
             height: 60px;
@@ -14,6 +12,9 @@
         font-family: "poppinsmedium";
     }
     @media (min-width: 992px) {
+        &__container {
+            padding: 1em 0;
+        }
         &__container > small > br {
             display: none;
         }
