@@ -1,0 +1,67 @@
+.register {
+    padding: 6.25em 0;
+    background-color: $black;
+    &__header {
+        &__text {
+            color: $white;
+            font-size: x-small;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: "poppinsregular";
+        }
+        @media (min-width: 992px) {
+            &__text::after {
+                right: 0;
+                width: 35%;
+                height: 2px;
+                content: '';
+                position: absolute;
+                background-color: $white;
+            }
+        }
+    }
+    &__text-content {
+        flex-direction: column;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+        div.d-flex {
+            flex: 1;
+        }
+        &__arrow-img {
+            width: 60px;
+            height: 30px;
+            @media (min-width: 576px) {
+                width: 128px;
+                height: 57px;
+            }
+        }
+        &__headline {
+            flex: 1;
+            color: $orange;
+            font-size: 1.8em;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+            @media (min-width: 576px) {
+                font-size: 2em;
+            }
+            @media (min-width: 768px) {
+                font-size: 3em;
+                flex-direction: row;
+            }
+        }
+        &__subheadline {
+            flex: 1;
+            color: $white;
+            max-width: 210px;
+            margin-left: 74px;
+            @media (min-width: 576px) {
+                margin-left: 144px;
+            }
+            @media (min-width: 768px) {
+                margin-left: 153px;
+            }
+        }
+    }
+    // &__box {}
+}
