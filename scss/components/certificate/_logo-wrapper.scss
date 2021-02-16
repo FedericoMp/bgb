@@ -1,0 +1,26 @@
+@mixin logo-wrapper {
+    &__logo-wrapper {
+        right: 6%;
+        margin-top: .5em;
+        position: absolute;
+        &__circle_out {
+            width: 169px;
+            height: 182px;
+            position: absolute;
+            animation: circle-rotate 30s infinite linear;
+        }
+        &__circle_in {
+            width: 169px;
+            height: 182px;
+        }
+    }
+}
+
+@keyframes circle-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

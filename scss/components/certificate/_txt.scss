@@ -1,0 +1,9 @@
+@mixin txt {
+    &__txt {
+            color: $dk-grey-3;
+            font-size: x-small;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: 'poppinsregular';
+        }
+}

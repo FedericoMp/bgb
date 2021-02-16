@@ -1,0 +1,17 @@
+@import 'txt';
+@import 'headline';
+@import 'box';
+@import 'bottom-content';
+@import 'logo-wrapper';
+
+.certificate {
+    margin: 6.25em 0;
+    position: relative;
+    &__container {
+        @include txt;
+        @include headline;
+        @include box;
+        @include bottom-content;
+    }
+    @include logo-wrapper;
+}

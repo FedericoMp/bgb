@@ -103,8 +103,17 @@
   height: 88px;
 }
 
+@keyframes circle-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .certificate {
   margin: 6.25em 0;
+  position: relative;
 }
 .certificate__container__txt {
   color: #1D1D1D;
@@ -208,9 +217,24 @@ ul > li > .certificate__container__box__list__check-img {
   margin: 0;
   font-family: "poppinsmedium";
 }
+.certificate__logo-wrapper {
+  right: 6%;
+  margin-top: 0.5em;
+  position: absolute;
+}
+.certificate__logo-wrapper__circle_out {
+  width: 169px;
+  height: 182px;
+  position: absolute;
+  animation: circle-rotate 30s infinite linear;
+}
+.certificate__logo-wrapper__circle_in {
+  width: 169px;
+  height: 182px;
+}
 
 .register {
-  padding: 6.25em 0;
+  padding: 12em 0 6.25em 0;
   background-color: #000000;
 }
 .register__header__text {

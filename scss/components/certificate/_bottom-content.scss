@@ -1,0 +1,15 @@
+@mixin bottom-content {
+    &__bottom-content {
+        flex-direction: column;
+        &__line {
+            width: 15px;
+            height: 3px;
+            margin-bottom: .5em;
+            background-color: $black;
+        }
+        &__txt {
+            margin: 0;
+            font-family: 'poppinsmedium';
+        }
+    }
+}

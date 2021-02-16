@@ -3,7 +3,7 @@
 @import 'box';
 
 .register {
-    padding: 6.25em 0;
+    padding: 12em 0 6.25em 0;
     background-color: $black;
     @include header;
     @include text-content;
