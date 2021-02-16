@@ -12,28 +12,34 @@ var btnOrange = $('#btnOrange');
 var btnArrowImg = $('#btnArrowImg');
 
 // Event Listeners
-bgimageOnHover.on('mouseover', changeSrc);
-bgimageOnHover.on('mouseleave', changeSrc);
+bgimageOnHover.on('mouseover', changeSrcOver);
+bgimageOnHover.on('mouseleave', changeSrcLeave);
 
-btnOrange.on('mouseover', changeArrow);
-btnOrange.on('mouseleave', changeArrow);
+btnOrange.on('mouseover', changeArrowOver);
+btnOrange.on('mouseleave', changeArrowLeave);
 
 // Event Functions
-function changeSrc() {
+function changeSrcOver() {
     if (flagBg) {
         srcToChange[0].src = orangeArrow;
         flagBg = false;
-    } else {
+    }
+}
+function changeSrcLeave() {
+    if (!flagBg) {
         srcToChange[0].src = whiteArrow;
         flagBg = true;
     }
 }
 
-function changeArrow() {
+function changeArrowOver() {
     if (flagBtn) {
         btnArrowImg[0].src = whiteArrow;
         flagBtn = false;
-    } else {
+    }
+}
+function changeArrowLeave() {
+    if (!flagBtn) {
         btnArrowImg[0].src = orangeArrow;
         flagBtn = true;
     }
