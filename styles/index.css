@@ -42,11 +42,7 @@
 .hero__link {
   flex: 1;
 }
-.hero__link:hover {
-  text-decoration: none;
-}
-.hero__link:active, .hero__link:visited {
-  color: #FFFFFF;
+.hero__link:hover, .hero__link:active, .hero__link:visited {
   text-decoration: none;
 }
 .hero__container {
@@ -289,17 +285,17 @@ ul > li > .certificate__container__box__list__check-img {
     margin-left: 153px;
   }
 }
-.register__box__form-content {
+.register__box__box-content {
   flex-direction: column;
   align-items: flex-start;
 }
 @media (min-width: 992px) {
-  .register__box__form-content {
+  .register__box__box-content {
     flex-direction: row;
     align-items: flex-end;
   }
 }
-.register__box__form-content__links {
+.register__box__box-content__links {
   flex: 1;
   order: 2;
   margin-top: 3em;
@@ -308,13 +304,13 @@ ul > li > .certificate__container__box__list__check-img {
   flex-direction: column;
 }
 @media (min-width: 992px) {
-  .register__box__form-content__links {
+  .register__box__box-content__links {
     order: 1;
     margin-top: 0;
     align-self: flex-end;
   }
 }
-.register__box__form-content__links ul {
+.register__box__box-content__links ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -323,45 +319,45 @@ ul > li > .certificate__container__box__list__check-img {
   flex-direction: column;
 }
 @media (min-width: 992px) {
-  .register__box__form-content__links ul {
+  .register__box__box-content__links ul {
     font-size: 1.25em;
     text-align: left;
     flex-direction: row;
   }
 }
-.register__box__form-content__links ul li > a {
+.register__box__box-content__links ul li > a {
   color: #333333;
 }
-.register__box__form-content__links ul li > a:hover, .register__box__form-content__links ul li > a:active, .register__box__form-content__links ul li > a:visited {
+.register__box__box-content__links ul li > a:hover, .register__box__box-content__links ul li > a:active, .register__box__box-content__links ul li > a:visited {
   text-decoration: none;
 }
 @media (min-width: 992px) {
-  .register__box__form-content__links ul li:nth-child(-n+3) {
+  .register__box__box-content__links ul li:nth-child(-n+3) {
     margin-right: 0.5em;
   }
-  .register__box__form-content__links ul li:nth-child(-n+3) a::after {
+  .register__box__box-content__links ul li:nth-child(-n+3) a::after {
     content: " /";
   }
 }
-.register__box__form-content__form {
+.register__box__box-content__form {
   order: 1;
   margin-top: 3em;
   align-self: center;
 }
 @media (min-width: 992px) {
-  .register__box__form-content__form {
+  .register__box__box-content__form {
     order: 2;
     margin-top: -3em;
   }
 }
-.register__box__form-content__form form .form-control {
+.register__box__box-content__form form .form-control {
   color: #FFFFFF;
   border-radius: 0.1rem;
   padding: 0.5rem 1.75rem;
   background-color: #000000;
   height: calc(2.4em + 0.95rem + 5px);
 }
-.register__box__form-content__form form button.btn.btn-outline-orange {
+.register__box__box-content__form form button.btn.btn-outline-orange {
   width: 100%;
   color: #ED632F;
   font-size: small;
@@ -373,18 +369,18 @@ ul > li > .certificate__container__box__list__check-img {
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
-  .register__box__form-content__form form button.btn.btn-outline-orange {
+  .register__box__box-content__form form button.btn.btn-outline-orange {
     width: auto;
   }
 }
-.register__box__form-content__form__arrow-img {
+.register__box__box-content__form__arrow-img {
   width: 19px;
   height: 22px;
   float: right;
   margin-left: 0;
 }
 @media (min-width: 992px) {
-  .register__box__form-content__form__arrow-img {
+  .register__box__box-content__form__arrow-img {
     margin-left: 2em;
   }
 }

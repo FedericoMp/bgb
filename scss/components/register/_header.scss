@@ -1,0 +1,21 @@
+@mixin header {
+    &__header {
+        &__text {
+            color: $white;
+            font-size: x-small;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: "poppinsregular";
+        }
+        @media (min-width: 992px) {
+            &__text::after {
+                right: 0;
+                width: 35%;
+                height: 2px;
+                content: '';
+                position: absolute;
+                background-color: $white;
+            }
+        }
+    }
+}

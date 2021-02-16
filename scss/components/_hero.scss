@@ -6,12 +6,10 @@
     }
     &__link {
         flex: 1;
-        &:hover {
+        &:hover,
+        &:active,
+        &:visited {
            text-decoration: none;
-        }
-        &:active, &:visited {
-            color: $white;
-            text-decoration: none;
         }
     }
     &__container {

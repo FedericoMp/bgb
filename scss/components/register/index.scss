@@ -1,0 +1,11 @@
+@import 'header';
+@import 'text-content';
+@import 'box';
+
+.register {
+    padding: 6.25em 0;
+    background-color: $black;
+    @include header;
+    @include text-content;
+    @include box;
+}
