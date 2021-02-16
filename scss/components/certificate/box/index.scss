@@ -1,0 +1,16 @@
+@import 'text-content';
+@import 'list';
+@import 'cert-img';
+
+@mixin box {
+    &__box {
+        margin: 3.25em 0;
+        flex-direction: column;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+        @include text-content;
+        @include list;
+        @include cert-img;
+    }
+}

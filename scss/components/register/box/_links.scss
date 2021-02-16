@@ -1,0 +1,44 @@
+@mixin links {
+    &__links {
+        flex: 1;
+        order: 2;
+        margin-top: 3em;
+        color: $dk-grey-2;
+        align-self: center;
+        flex-direction: column;
+        @media (min-width: 992px) {
+            order: 1;
+            margin-top: 0;
+            align-self: flex-end;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 1.5em;
+            text-align: center;
+            flex-direction: column;
+            @media (min-width: 992px) {
+                font-size: 1.25em;
+                text-align: left;
+                flex-direction: row;
+            }
+            li > a {
+                color: $dk-grey-2;
+                &:hover, 
+                &:active, 
+                &:visited {
+                    text-decoration: none;
+                }
+            }
+            li:nth-child(-n+3) {
+                @media (min-width: 992px) {
+                    margin-right: .5em;
+                    a::after {
+                        content: ' /'
+                    }
+                }
+            }
+        }
+    }
+}

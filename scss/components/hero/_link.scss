@@ -1,0 +1,10 @@
+@mixin link {
+    &__link {
+        flex: 1;
+        &:hover,
+        &:active,
+        &:visited {
+           text-decoration: none;
+        }
+    }
+}

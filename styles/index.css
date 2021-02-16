@@ -49,13 +49,15 @@
   flex: 1;
 }
 .hero__container__arrow {
+  z-index: 1;
   width: 27px;
   height: 33px;
   display: flex;
-  margin-right: 1.5em;
+  margin-right: 2em;
   box-sizing: border-box;
 }
 .hero__container__txt {
+  z-index: 1;
   color: #FFFFFF;
   margin-top: 1.5em;
   font-weight: normal;
@@ -75,17 +77,48 @@
 }
 .hero__container.bg-handshake {
   background-image: url("../assets/img/handshake-min.jpg");
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   filter: grayscale(100%);
 }
+.hero__container.bg-handshake:hover img.hero__container__arrow {
+  margin-right: 1em;
+}
+.hero__container.bg-handshake:hover.bg-handshake {
+  filter: none;
+}
+.hero__container.bg-handshake:hover.bg-handshake::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ED632FDB;
+}
 .hero__container.bg-notes {
   background-image: url("../assets/img/notes-min.jpg");
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   filter: grayscale(100%);
+}
+.hero__container.bg-notes:hover img.hero__container__arrow {
+  margin-right: 1em;
+}
+.hero__container.bg-notes:hover span.hero__container__txt {
+  color: #ED632F;
+}
+.hero__container.bg-notes:hover.bg-notes {
+  filter: none;
+}
+.hero__container.bg-notes:hover.bg-notes::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #FFFFFFB8;
 }
 
 .video {
@@ -366,6 +399,7 @@ ul > li > .certificate__container__box__list__check-img {
 .register__box__box-content__form {
   order: 1;
   margin-top: 3em;
+  max-width: 470px;
   align-self: center;
 }
 @media (min-width: 992px) {

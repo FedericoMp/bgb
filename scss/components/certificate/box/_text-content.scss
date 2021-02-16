@@ -1,0 +1,19 @@
+@mixin text-content {
+    &__text-content {
+        flex: 1;
+        order: 1;
+        @media (min-width: 992px) {
+            order: 1;
+        }
+        &__headline, &__paragraph {
+            margin: 0;
+        }
+        &__headline {
+            font-size: large;
+            font-family: 'poppinsbold';
+        }
+        &__paragraph {
+            font-size: smaller;
+        }
+    }
+}

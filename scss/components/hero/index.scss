@@ -1,0 +1,19 @@
+@import 'link';
+@import 'arrow';
+@import 'txt';
+@import 'bg-img';
+
+.hero {
+    flex-direction: column;
+    height: 75vh;
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+    @include link;
+    &__container {
+        flex: 1;
+        @include arrow;
+        @include txt;
+        @include bg-img;
+    }
+}

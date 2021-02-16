@@ -1,0 +1,18 @@
+@import '../../utils/bg-settings';
+
+@mixin bg-img {
+    &.bg-handshake {
+        background-image: url('../assets/img/handshake-min.jpg');
+        @include bg-image;
+    }
+    &.bg-handshake:hover {
+        @include bg-hover(handshake);
+    }
+    &.bg-notes {
+        background-image: url('../assets/img/notes-min.jpg');
+        @include bg-image;
+    }
+    &.bg-notes:hover {
+        @include bg-hover(notes);
+    }
+}

@@ -1,0 +1,10 @@
+@mixin arrow {
+    &__arrow {
+        z-index: 1;
+        width: 27px;
+        height: 33px;
+        display: flex;
+        margin-right: 2em;
+        box-sizing: border-box;
+    }
+}

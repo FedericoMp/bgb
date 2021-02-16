@@ -1,0 +1,24 @@
+@mixin list {
+    &__list {
+        flex: 1;
+        order: 3;
+        margin: 0;
+        align-self: start;
+        box-sizing: border-box;
+        @media (min-width: 992px) {
+            order: 2;
+            margin: 0 2.5em;
+            align-self: center;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            color: $orange;
+            list-style: none;
+        }
+        ul > li > &__check-img {
+            width: 25px;
+            height: 22px;
+        }
+    }
+}
