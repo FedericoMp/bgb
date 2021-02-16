@@ -30,12 +30,16 @@
                 &:visited {
                     text-decoration: none;
                 }
+                &:hover {
+                    color: $orange;
+                }
             }
             li:nth-child(-n+3) {
                 @media (min-width: 992px) {
                     margin-right: .5em;
                     a::after {
-                        content: ' /'
+                        content: ' /';
+                        color: $dk-grey-2;
                     }
                 }
             }

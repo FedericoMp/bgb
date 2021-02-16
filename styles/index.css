@@ -388,12 +388,16 @@ ul > li > .certificate__container__box__list__check-img {
 .register__box__box-content__links ul li > a:hover, .register__box__box-content__links ul li > a:active, .register__box__box-content__links ul li > a:visited {
   text-decoration: none;
 }
+.register__box__box-content__links ul li > a:hover {
+  color: #ED632F;
+}
 @media (min-width: 992px) {
   .register__box__box-content__links ul li:nth-child(-n+3) {
     margin-right: 0.5em;
   }
   .register__box__box-content__links ul li:nth-child(-n+3) a::after {
     content: " /";
+    color: #333333;
   }
 }
 .register__box__box-content__form {
@@ -430,6 +434,10 @@ ul > li > .certificate__container__box__list__check-img {
   .register__box__box-content__form form button.btn.btn-outline-orange {
     width: auto;
   }
+}
+.register__box__box-content__form form button.btn.btn-outline-orange:hover {
+  color: #FFFFFF;
+  background-color: #ED632F;
 }
 .register__box__box-content__form__arrow-img {
   width: 19px;

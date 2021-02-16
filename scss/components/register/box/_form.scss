@@ -30,6 +30,10 @@
                     width: auto;
                 }
             }
+            button.btn.btn-outline-orange:hover {
+                color: $white;
+                background-color: $orange;
+            }
         }
         &__arrow-img {
             width: 19px;
