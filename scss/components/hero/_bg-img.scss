@@ -2,14 +2,14 @@
 
 @mixin bg-img {
     &.bg-handshake {
-        background-image: url('../assets/img/handshake-min.jpg');
+        background-image: url('../assets/img/handshake-min.png');
         @include bg-image;
     }
     &.bg-handshake:hover {
         @include bg-hover(handshake);
     }
     &.bg-notes {
-        background-image: url('../assets/img/notes-min.jpg');
+        background-image: url('../assets/img/notes-min.png');
         @include bg-image;
     }
     &.bg-notes:hover {

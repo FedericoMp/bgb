@@ -1,27 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @font-face {
-  font-family: "poppinsbold";
+  font-family: "poppins-bold";
   src: url("../assets/fonts/poppins-bold-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-bold-webfont.woff") format("woff"), url("../assets/fonts/poppins-bold-webfont.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "poppinsmedium";
+  font-family: "poppins-medium";
   src: url("../assets/fonts/poppins-medium-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-medium-webfont.woff") format("woff"), url("../assets/fonts/poppins-medium-webfont.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "poppinsregular";
+  font-family: "poppins-regular";
   src: url("../assets/fonts/poppins-regular-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-regular-webfont.woff") format("woff"), url("../assets/fonts/poppins-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "poppinssemibold";
+  font-family: "poppins-semibold";
   src: url("../assets/fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-semibold-webfont.woff") format("woff"), url("../assets/fonts/poppins-semibold-webfont.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   background-color: #1D1D1D;
 }
@@ -32,7 +37,7 @@
 
 .hero {
   flex-direction: column;
-  height: 75vh;
+  height: 100vh;
 }
 @media (min-width: 992px) {
   .hero {
@@ -47,6 +52,7 @@
 }
 .hero__container {
   flex: 1;
+  justify-content: flex-end;
 }
 .hero__container__arrow {
   z-index: 1;
@@ -61,10 +67,10 @@
   color: #FFFFFF;
   margin-top: 1.5em;
   font-weight: normal;
-  font-family: "poppinsmedium";
+  font-family: "poppins-medium", "Poppins", sans-serif;
 }
 .hero__container__txt--bold {
-  font-family: "poppinsbold";
+  font-family: "poppins-bold", "Poppins", sans-serif;
   padding-right: 0.25em;
 }
 @media (min-width: 768px) {
@@ -76,7 +82,7 @@
   }
 }
 .hero__container.bg-handshake {
-  background-image: url("../assets/img/handshake-min.jpg");
+  background-image: url("../assets/img/handshake-min.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +103,7 @@
   background-color: #ED632FDB;
 }
 .hero__container.bg-notes {
-  background-image: url("../assets/img/notes-min.jpg");
+  background-image: url("../assets/img/notes-min.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,9 +126,69 @@
   position: absolute;
   background-color: #FFFFFFB8;
 }
+@media (max-width: 484px) {
+  .hero .bg-handshake > .hero__container__txt {
+    margin-right: 30%;
+  }
+}
+@media (min-width: 485px) {
+  .hero .bg-handshake > .hero__container__txt {
+    margin-right: 32%;
+  }
+}
+@media (min-width: 545px) {
+  .hero .bg-handshake > .hero__container__txt {
+    margin-right: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .hero .bg-handshake > .hero__container__txt {
+    margin-right: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .hero .bg-handshake > .hero__container__txt {
+    margin-right: 25%;
+  }
+}
+@media (min-width: 1400px) {
+  .hero .bg-handshake > .hero__container__txt {
+    margin-right: 35%;
+  }
+}
+@media (max-width: 484px) {
+  .hero .bg-notes > .hero__container__txt {
+    margin-right: 25%;
+  }
+}
+@media (min-width: 485px) {
+  .hero .bg-notes > .hero__container__txt {
+    margin-right: 30%;
+  }
+}
+@media (min-width: 545px) {
+  .hero .bg-notes > .hero__container__txt {
+    margin-right: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .hero .bg-notes > .hero__container__txt {
+    margin-right: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .hero .bg-notes > .hero__container__txt {
+    margin-right: 25%;
+  }
+}
+@media (min-width: 1400px) {
+  .hero .bg-notes > .hero__container__txt {
+    margin-right: 30%;
+  }
+}
 
 .video {
-  height: 75vh;
+  height: 100vh;
 }
 .video.bg-video {
   background-image: url("../assets/img/living-min.jpg");
@@ -153,13 +219,13 @@
   font-size: x-small;
   text-transform: uppercase;
   text-decoration: underline;
-  font-family: "poppinsregular";
+  font-family: "poppins-regular", "Poppins", sans-serif;
 }
 .certificate__container__headline {
   margin: 0;
   color: #000000;
   font-size: 4em;
-  font-family: "poppinsregular";
+  font-family: "poppins-regular", "Poppins", sans-serif;
 }
 .certificate__container__headline--border {
   -webkit-text-stroke: 2px #000000;
@@ -194,7 +260,7 @@
 }
 .certificate__container__box__text-content__headline {
   font-size: large;
-  font-family: "poppinsbold";
+  font-family: "poppins-bold", "Poppins", sans-serif;
 }
 .certificate__container__box__text-content__paragraph {
   font-size: smaller;
@@ -248,7 +314,7 @@ ul > li > .certificate__container__box__list__check-img {
 }
 .certificate__container__bottom-content__txt {
   margin: 0;
-  font-family: "poppinsmedium";
+  font-family: "poppins-medium", "Poppins", sans-serif;
 }
 .certificate__logo-wrapper {
   right: 6%;
@@ -275,7 +341,7 @@ ul > li > .certificate__container__box__list__check-img {
   font-size: x-small;
   text-transform: uppercase;
   text-decoration: underline;
-  font-family: "poppinsregular";
+  font-family: "poppins-regular", "Poppins", sans-serif;
 }
 @media (min-width: 992px) {
   .register__header__text::after {
@@ -463,7 +529,7 @@ ul > li > .certificate__container__box__list__check-img {
 }
 .footer__container > small {
   color: #1D1D1D;
-  font-family: "poppinsmedium";
+  font-family: "poppins-medium", "Poppins", sans-serif;
 }
 @media (min-width: 992px) {
   .footer__container {

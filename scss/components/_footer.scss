@@ -9,7 +9,7 @@
     }
     &__container > small {
         color: $dk-grey-3;
-        font-family: "poppinsmedium";
+        font-family: 'poppins-medium', 'Poppins', sans-serif;
     }
     @media (min-width: 992px) {
         &__container {
